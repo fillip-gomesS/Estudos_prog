@@ -1,13 +1,15 @@
-programa {
-  funcao inicio() { inteiro contador = 1
-inteiro num1
-escreva("digite um valor")
-leia(num1)
-enquanto(num1>=contador)
-{
-escreva("\n"+num1)
-num1--
+programa { inclua biblioteca Util --> u
+  funcao inicio() {inteiro contador
+  escreva("digite um numero: ")
+  leia(contador)
+  
+  enquanto(contador>=0)
+    {
+    escreva("tempo restante", "\n")
+    escreva(contador--, "\n")
+    u.aguarde(1000)
+    limpa()
+  }
     
-}}
+  }
 }
-fim
